@@ -1,8 +1,6 @@
 const list = JSON.parse(localStorage.getItem("list")) || [];
-// const record = JSON.parse(localStorage.getItem("record")) || [];
 let flag = "off";
 let count = JSON.parse(localStorage.getItem("record")) || 0;
-// let count = 0;
 
 function light(){
   count++;
