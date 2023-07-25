@@ -1,0 +1,8 @@
+.hidden-item{
+   display:none;
+}
+
+button:hover{
+  transform:scale(1.3,1.3);
+  transition: 1s ease-in-out;
+}
