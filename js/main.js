@@ -3,12 +3,12 @@ let flag = "off";
 let count = JSON.parse(localStorage.getItem("record")) || 0;
 
 function light(){
+  const date = new Date();
   count++;
   if(flag==="on")
-    flag="off"
+    flag="off";
   else
-     flag="on"
-  const date = new Date();
+     flag="on";
   document.getElementById("off").classList.toggle("hidden-item");
   document.getElementById("on").classList.toggle("hidden-item");
   document.getElementById("date").innerHTML+=`<p class="text-center">You clicked on the bulb at:${date}</p>;
